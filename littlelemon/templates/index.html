@@ -1,11 +1,18 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
    <head>
       <title>Capstone Project</title>
+      <link
+      rel="preload"
+      as="style"
+      href="{% static 'css/style.css' %}"
+      onload="this.rel = 'stylesheet'"
+    />
    </head>
    <body>
       <h1 style="text-align:center;">Welcome To LittleLemon Restaurant</h1>
-      {% load static %}
-      <img src="{% static 'restaurant/littlelemon.png' %}">
+      
+      <img src="{% static 'restaurant/littlelemon.png' %}" class="center">
    </body>
 </html>
